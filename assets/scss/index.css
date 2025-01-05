@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+a {
+  color: #000;
+}
+
+.header .topBar .row {
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+}
+.header .topBar .row a {
+  text-transform: uppercase;
+  color: #777777;
+  font-size: 12px;
+  transition: 0.5s ease;
+}
+.header .topBar .row a:hover {
+  color: #1641ff;
+}
+.header .topBar .row .right .topBarList {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .topBar .row .right .topBarList .topBarItem {
+  display: flex;
+  gap: 1px;
+}
+.header .topBar .row .right .topBarList .topBarItem:first-child {
+  border-right: 1px solid #ddd;
+  padding-right: 20px;
+}
+.header .topBar .row .right .topBarList .topBarItem a {
+  transition: 0.5s ease;
+}
+.header .topBar .row .right .topBarList .topBarItem a:hover {
+  color: #1641ff;
+}
+.header .topBar .row .right .topBarList .topBarItem span {
+  font-size: 12px;
+}
+.header .bottomBar {
+  background: #f8f8f8;
+}
+.header .bottomBar .row {
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.header .bottomBar .row .logo img {
+  max-width: 100%;
+}
+.header .bottomBar .row .navBar {
+  height: 100%;
+}
+.header .bottomBar .row .navBar .navList {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 50px;
+}
+.header .bottomBar .row .navBar .navList .navItem {
+  height: 100%;
+}
+.header .bottomBar .row .navBar .navList .navItem a {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #222222;
+  height: 100%;
+  letter-spacing: 1px;
+  transition: 0.5s ease;
+}
+.header .bottomBar .row .navBar .navList .navItem a:hover {
+  color: #1641ff;
+}
+.header .bottomBar .row .userArea .userAreaList {
+  display: flex;
+  gap: 35px;
+}
+.header .bottomBar .row .userArea .userAreaList .userAreaItem {
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.header .bottomBar .row .userArea .userAreaList .userAreaItem:hover {
+  color: #1641ff;
+}
+.header .bottomBar .row .userArea .userAreaList .userAreaItem i {
+  font-size: 18px;
+}
+.header .bottomBar .row .burger {
+  display: none;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 99;
+  cursor: pointer;
+}
+.header .bottomBar .row .burger span:nth-child(1),
+.header .bottomBar .row .burger span:nth-child(2),
+.header .bottomBar .row .burger span:nth-child(3) {
+  width: 28px;
+  height: 3px;
+  border-radius: 15px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.header .bottomBar .row .burger span:nth-child(1) {
+  top: -8px;
+}
+.header .bottomBar .row .burger span:nth-child(3) {
+  top: 8px;
+}
+.header .bottomBar .row .opened span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.header .bottomBar .row .opened span:nth-child(2) {
+  transform: translateX(-100px);
+}
+.header .bottomBar .row .opened span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}/*# sourceMappingURL=index.css.map */

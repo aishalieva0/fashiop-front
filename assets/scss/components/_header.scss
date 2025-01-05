@@ -1,0 +1,140 @@
+.header {
+  .topBar {
+    .row {
+      justify-content: space-between;
+      align-items: center;
+      height: 40px;
+      a {
+        text-transform: uppercase;
+        color: $pfont;
+        font-size: 12px;
+        transition: 0.5s ease;
+        &:hover {
+          color: $baseColor;
+        }
+      }
+      .right {
+        .topBarList {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          .topBarItem {
+            display: flex;
+            gap: 1px;
+            &:first-child {
+              border-right: 1px solid #ddd;
+              padding-right: 20px;
+            }
+            a {
+              transition: 0.5s ease;
+              &:hover {
+                color: $baseColor;
+              }
+            }
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottomBar {
+    background: #f8f8f8;
+    .row {
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+
+      .logo {
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .navBar {
+        height: 100%;
+        .navList {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          gap: 50px;
+          .navItem {
+            height: 100%;
+            a {
+              display: flex;
+              align-items: center;
+              text-transform: uppercase;
+              font-size: 13px;
+              color: $darkColor;
+              height: 100%;
+              letter-spacing: 1px;
+              transition: 0.5s ease;
+              &:hover {
+                color: $baseColor;
+              }
+            }
+          }
+        }
+      }
+
+      .userArea {
+        .userAreaList {
+          display: flex;
+          gap: 35px;
+          .userAreaItem {
+            cursor: pointer;
+            transition: 0.5s ease;
+            &:hover {
+              color: $baseColor;
+            }
+            i {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .burger {
+        display: none;
+        background: none;
+        border: none;
+        position: relative;
+        z-index: 99;
+        cursor: pointer;
+
+        span:nth-child(1),
+        span:nth-child(2),
+        span:nth-child(3) {
+          width: 28px;
+          height: 3px;
+          border-radius: 15px;
+          background-color: #000;
+          position: absolute;
+          left: 0;
+          transition: all 0.3s ease;
+        }
+
+        span:nth-child(1) {
+          top: -8px;
+        }
+        span:nth-child(3) {
+          top: 8px;
+        }
+      }
+
+      .opened {
+        span:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+        span:nth-child(2) {
+          transform: translateX(-100px);
+        }
+        span:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+    }
+  }
+}
